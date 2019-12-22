@@ -117,6 +117,7 @@ def big_shoe_rebounds
       memo = hash
       memo
   end
+  end
 end
 
 # def most_points_scored()
