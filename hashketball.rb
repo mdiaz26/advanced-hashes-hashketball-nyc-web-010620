@@ -111,7 +111,7 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  combine_players(game_hash).reduce do |memo, hash|
+  combine_players(game_hash).reduce({}) do |memo, hash|
   binding.pry
   end
 end
