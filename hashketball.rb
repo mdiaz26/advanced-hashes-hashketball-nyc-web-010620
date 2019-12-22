@@ -135,6 +135,7 @@ def winning_team
     return game_hash[:away][:team_name]
   else
     return "it was a tie!"
+  end
 end
 
 # def player_with_longest_name()
