@@ -128,7 +128,7 @@ def winning_team
   home_players = hash[:home][:players]
   away_players = hash[:away][:players]
   home_total = home_players.reduce do |memo, hash|
-    memo += hash
+    memo[:points] += hash[:points]
   end
   binding.pry
 end
