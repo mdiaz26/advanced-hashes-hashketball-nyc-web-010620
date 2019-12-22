@@ -125,11 +125,11 @@ def most_points_scored
 end
 
 def winning_team
-  home_players = hash[:home][:players]
-  away_players = hash[:away][:players]
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
   home_total = home_players.reduce do |memo, hash|
   binding.pry
-    # memo[:points] += hash[:points]
+    memo[:points] += hash[:points]
   end
 end
 
