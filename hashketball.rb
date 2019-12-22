@@ -112,10 +112,10 @@ end
 
 def big_shoe_rebounds
   combine_players(game_hash).reduce({:shoe => 0}) do |memo, hash|
-  binding.pry
     if memo[:shoe] < hash[:shoe]
       memo = hash
       memo
+  binding.pry
   end
   end
 end
