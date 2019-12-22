@@ -148,8 +148,8 @@ end
 def long_name_steals_a_ton?
   most_steals = combine_players(game_hash).reduce do |memo, hash|
     memo[:steals] > hash[:steals] ? memo : hash
-  player_with_longest_name == most_steals[:player_name] ?
 end
+  player_with_longest_name == most_steals[:player_name] ?
 
 
 
