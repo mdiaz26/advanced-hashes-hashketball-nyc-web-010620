@@ -131,7 +131,7 @@ def winning_team
     memo[:points] += hash[:points]
   end
   home_total
-  # binding.pry
+  binding.pry
 end
 
 # def player_with_longest_name()
