@@ -94,11 +94,14 @@ def stats_hash(player_hash)
   return sorted_hash
 end
 
+def combine_players(hash)
+  home_players = hash[:home][:players]
+  away_players = hash[:away][:players]
+  all_players = home_players.concat(away_players)
+end
 
 def player_stats(player)
-  home_players = game_hash[:home][:players]
-  away_players = game_hash[:away][:players]
-  all_players = home_players.concat(away_players)
+  combine_players(game_hash)
   all_players.each do |hash|
     if hash[:player_name] == player 
       return stats_hash(hash)
@@ -107,8 +110,8 @@ def player_stats(player)
   end
 end
 
-# def big_shoe_rebounds()
-# end
+def big_shoe_rebounds()
+end
 
 # def most_points_scored()
 # end
