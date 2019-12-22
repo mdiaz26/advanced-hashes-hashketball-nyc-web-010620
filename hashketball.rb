@@ -111,7 +111,7 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  biggest = combine_players(game_hash).reduce({:shoe => 0}) do |memo, hash|
+  biggest = combine_players(game_hash).reduce do |memo, hash|
     if memo[:shoe] < hash[:shoe]
       memo = hash
       memo
