@@ -115,8 +115,8 @@ def big_shoe_rebounds
     if memo[:shoe] < hash[:shoe]
       memo = hash
       memo
-  binding.pry
   end
+  binding.pry
   end
 end
 
