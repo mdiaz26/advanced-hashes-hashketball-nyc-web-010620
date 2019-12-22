@@ -117,8 +117,12 @@ def big_shoe_rebounds
   return biggest[:rebounds]
 end
 
-# def most_points_scored()
-# end
+def most_points_scored
+  points = combine_players(game_hash).reduce do |memo, hash|
+    memo[:points] > hash[:points] ? memo : hash
+  end
+  return points[:player_name]
+end
 
 # def winning_team()
 # end
