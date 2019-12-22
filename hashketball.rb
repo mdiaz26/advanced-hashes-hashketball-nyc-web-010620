@@ -150,7 +150,6 @@ def long_name_steals_a_ton?
     memo[:steals] > hash[:steals] ? memo : hash
   end
   return player_with_longest_name == most_steals[:player_name] ?
-end
 
 
 
