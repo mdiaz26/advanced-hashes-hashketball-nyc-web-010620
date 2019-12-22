@@ -98,11 +98,11 @@ def combine_players(hash)
   home_players = hash[:home][:players]
   away_players = hash[:away][:players]
   all_players = home_players.concat(away_players)
+  return all_players
 end
 
 def player_stats(player)
-  combine_players(game_hash)
-  all_players.each do |hash|
+  combine_players(game_hash).each do |hash|
     if hash[:player_name] == player 
       return stats_hash(hash)
   # binding.pry
