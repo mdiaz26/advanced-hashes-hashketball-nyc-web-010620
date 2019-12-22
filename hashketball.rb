@@ -116,8 +116,8 @@ def big_shoe_rebounds
       memo = hash
       memo
   end
-  binding.pry
   end
+  binding.pry
 end
 
 # def most_points_scored()
