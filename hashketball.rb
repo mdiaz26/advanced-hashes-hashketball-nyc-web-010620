@@ -110,7 +110,10 @@ def player_stats(player)
   end
 end
 
-def big_shoe_rebounds()
+def big_shoe_rebounds
+  combine_players(game_hash).reduce do |memo, hash|
+  binding.pry
+  end
 end
 
 # def most_points_scored()
