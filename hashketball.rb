@@ -128,9 +128,10 @@ def winning_team
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   home_total = home_players.reduce do |memo, hash|
-  binding.pry
     memo[:points] += hash[:points]
   end
+  home_total
+  # binding.pry
 end
 
 # def player_with_longest_name()
