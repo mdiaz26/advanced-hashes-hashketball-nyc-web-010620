@@ -138,8 +138,12 @@ def winning_team
   end
 end
 
-# def player_with_longest_name()
-# end
+def player_with_longest_name
+  long_name = combine_players(game_hash).reduce do |memo, hash|
+    memo[:player_name].length > hash[:player_name].length ? memo : hash
+  end
+  return long_name[:player_name]
+end
 
 # def long_name_steals_a_ton?()
 # end
