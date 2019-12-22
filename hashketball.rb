@@ -128,10 +128,10 @@ def winning_team
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   home_total = home_players.reduce(0) { |memo, hash| memo + hash[:points] }
-  road_total = road_players.reduce(0) { |memo, hash| memo + hash[:points] }
-  if home_total > road_total
+  away_total = away_players.reduce(0) { |memo, hash| memo + hash[:points] }
+  if home_total > away_total
     return game_hash[:home][:team_name]
-  elsif road_total > home_total
+  elsif away_total > home_total
     return game_hash[:away][:team_name]
   else
     return "it was a tie!"
